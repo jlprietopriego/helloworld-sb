@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.springframework</groupId>
-    <artifactId>gs-spring-boot</artifactId>
+    <artifactId>helloworld</artifactId>
     <version>0.1.0</version>
 
     <parent>
@@ -32,13 +32,14 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>rpm-maven-plugin</artifactId>
+            <configuration>
+                <group>Development</group>
+                <description>helloworld</description>
+            </configuration>
+        </plugin>
     </build>
-    <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>rpm-maven-plugin</artifactId>
-        <configuration>
-            <group>Development</group>
-            <description>helloworld</description>
-        </configuration>
-    </plugin>
+
 </project>
