@@ -33,5 +33,12 @@
             </plugin>
         </plugins>
     </build>
-
+    <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>rpm-maven-plugin</artifactId>
+        <configuration>
+            <group>Development</group>
+            <description>helloworld</description>
+        </configuration>
+    </plugin>
 </project>
