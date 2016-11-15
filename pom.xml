@@ -31,15 +31,15 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>rpm-maven-plugin</artifactId>
+                <configuration>
+                    <group>Development</group>
+                    <description>helloworld</description>
+                </configuration>
+            </plugin>
         </plugins>
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>rpm-maven-plugin</artifactId>
-            <configuration>
-                <group>Development</group>
-                <description>helloworld</description>
-            </configuration>
-        </plugin>
     </build>
 
 </project>
