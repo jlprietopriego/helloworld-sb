@@ -24,6 +24,10 @@ public class ApplicationTests {
     @Test
     public void testHelloWorld() {
         final String response = restTemplate.getForObject("http://localhost:" + port, String.class);
+<<<<<<< HEAD
         assertEquals("Hotelbeds Group says Hello World!", response);
+=======
+        assertEquals("Hello Hotelbeds Group world!", response);
+>>>>>>> 817d5b6e70540103bca06833ca75292d7f01a625
     }
 }
