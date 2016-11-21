@@ -17,11 +17,7 @@ public class Application {
 
         @RequestMapping
         public String helloWorld() {
-<<<<<<< HEAD
             return "Hotelbeds Group says Hello World!";
-=======
-            return "Hello Hotelbeds Group world!";
->>>>>>> 817d5b6e70540103bca06833ca75292d7f01a625
         }
     }
 }
